@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/numero"
+            android:textColor="#9F2525" />
+
+        <EditText
+            android:id="@+id/editNumero"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Entrez le numero" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="382dp"
+        android:layout_height="43dp"
+        android:text="Message"
+        android:textColor="#811E1E" />
+
+    <EditText
+        android:id="@+id/editMesage"
+        android:layout_width="382dp"
+        android:layout_height="164dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Tapez le message" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="372dp"
+        android:layout_height="37dp"
+        android:text="Envoyer"
+        android:onClick="sendSMS"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
