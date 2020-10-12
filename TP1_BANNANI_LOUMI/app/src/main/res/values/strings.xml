@@ -2,6 +2,6 @@
     <string name="app_name">TP1_BANNANI_LOUMI</string>
     <string name="numero">Numero</string>
     <string name="textview">TextView</string>
-    <string name="name">Name</string>
+    <string name="name">TP1_BANNANI_LOUMI</string>
     <string name="tapez_le_message">Tapez le message</string>
 </resources>

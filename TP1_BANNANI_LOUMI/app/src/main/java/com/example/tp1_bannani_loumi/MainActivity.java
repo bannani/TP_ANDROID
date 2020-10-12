@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     boolean numeroValide;
+    SmsManager sms = SmsManager.getDefault();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,32 +24,38 @@ public class MainActivity extends AppCompatActivity {
         EditText editMessage = (EditText) findViewById(R.id.editMesage);
         String numeros = editNumeros.getText().toString();
         String message = editMessage.getText().toString();
-        if (message.length() > 0) {
-            if (numeros.contains(";")) {
-                String[] tableau = numeros.split(";");
-                for (int i = 0; i < tableau.length; i++) {
-                    if (tableau[i].length() < 4) {
-                        Toast.makeText(getApplicationContext(), "Le numero " + tableau[i] + " est invalide", Toast.LENGTH_SHORT).show();
-                        numeroValide = false;
+        if (numeros.contains(":")){
+            //si qq tape ":" au lieu de ";"
+            Toast.makeText(getApplicationContext(), "Le numero " + numeros + " est invalide", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            if (message.length() > 0) {
+                if (numeros.contains(";")) {
+                    String[] tableau = numeros.split(";");
+                    for (int i = 0; i < tableau.length; i++) {
+                        if (tableau[i].length() < 4) {
+                            Toast.makeText(getApplicationContext(), "Le numero " + tableau[i] + " est invalide", Toast.LENGTH_SHORT).show();
+                            numeroValide = false;
+                        }
                     }
+                    if (numeroValide) {
+                        for (int i = 0; i < tableau.length; i++) {
+                            sms.sendTextMessage(tableau[i], null, message, null, null);
+                        }
+                    }
+                } else if (numeros.length() >= 4) {
+                    sms.sendTextMessage(numeros, null, message, null, null);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Le numero " + numeros + " est invalide", Toast.LENGTH_SHORT).show();
+                    numeroValide = false;
                 }
                 if (numeroValide) {
-                    for (int i = 0; i < tableau.length; i++) {
-                        SmsManager.getDefault().sendTextMessage(tableau[i], null, message, null, null);
-                    }
+                    editNumeros.setText("");
+                    editMessage.setText("");
                 }
-            } else if (numeros.length() >= 4) {
-                SmsManager.getDefault().sendTextMessage(numeros, null, message, null, null);
             } else {
-                Toast.makeText(getApplicationContext(), "Le numero " + numeros + " est invalide", Toast.LENGTH_SHORT).show();
-                numeroValide = false;
+                Toast.makeText(getApplicationContext(), "Entrer le message", Toast.LENGTH_SHORT).show();
             }
-            if (numeroValide) {
-                editNumeros.setText("");
-                editMessage.setText("");
-            }
-        } else {
-            Toast.makeText(getApplicationContext(), "Entrer le message", Toast.LENGTH_SHORT).show();
         }
     }
 }
