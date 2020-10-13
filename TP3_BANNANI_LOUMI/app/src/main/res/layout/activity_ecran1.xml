@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="about"
+        android:text="@string/button_About"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/instructionText"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        tools:context="com.example.tp3_bannani_loumi.Porte1">
+
+
+        <Button
+            android:id="@+id/porte1"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/darker_gray"
+            android:onClick="select"
+            android:text="@string/button_un"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/porte2"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="select"
+            android:text="@string/button_deux"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:id="@+id/porte3"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="select"
+            android:text="@string/button_trois"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

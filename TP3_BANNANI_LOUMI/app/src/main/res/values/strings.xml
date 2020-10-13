@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TP3_BANNANI_LOUMI</string>
+    <string name="button_un">Porte 1</string>
+    <string name="button_deux">Porte 2</string>
+    <string name="button_trois">Porte 3</string>
+    <string name="button_About">A propos</string>
+    <string name="instructionText">Choisir une Porte :</string>
+    <string name="instructionEcran2Text">Garder la même porte en recliquant sur celle-ci ou bien choisir l\'autre porte:</string>
+    <string name="button_Restart">Rejouer</string>
+</resources>
