@@ -35,7 +35,7 @@ public class Porte2 extends AppCompatActivity {
 
     public void select(View view) {
         Button button = (Button) view;
-        Intent intent = new Intent(this, Porte3.class);
+        Intent intent = new Intent(this, Resultat.class);
         String choix = button.getText().toString();
         int choixPorte;
         if (choix.equals("Porte1")) {

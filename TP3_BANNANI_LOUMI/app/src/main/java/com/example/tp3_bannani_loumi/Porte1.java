@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
+import static com.example.tp3_bannani_loumi.R.drawable.porte;
+
 public class Porte1 extends AppCompatActivity {
     int voiture;
 
@@ -24,8 +26,11 @@ public class Porte1 extends AppCompatActivity {
     public void about(View view) {
         Uri page = Uri.parse("https://fr.wikipedia.org/wiki/Probl%C3%A8me_de_Monty_Hall");
         Intent intent = new Intent(Intent.ACTION_VIEW);
+        setContentView(R.layout.activity_ecran1);
+        
         intent.setData(page);
         startActivity(intent);
+
     }
 
     public void select(View view) {

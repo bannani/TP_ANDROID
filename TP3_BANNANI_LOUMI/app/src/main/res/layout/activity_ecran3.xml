@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.example.tp3_bannani_loumi.Porte3">
+    tools:context="com.example.tp3_bannani_loumi.Resultat">
 
     <ImageView
         android:id="@+id/imageResulat"
