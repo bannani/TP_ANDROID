@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ANDROID-BANNANI_Mohamed_Fares-LOUMI_Mohamed</string>
+    <string name="alreadyUser"><u>Already user, Click here to login</u></string>
+    <string name="Rendez_vous"><u>Rendez-vous</u></string>
+    <string name="username"><u>USERNAME</u></string>
+    <string name="password"><u>PASSWORD</u></string>
+    <string name="register"><u>RGISTER</u></string>
+    <string name="learn"><u>Learn more</u></string>
+    <string name="signUp"><u>Sign Up</u></string>
+    <string name="logIn"><u>LOG IN</u></string>
+    <string name="close"><u>CLOSE</u></string>
+    <string name="stats"><u>  Current stats :</u></string>
+    <string name="stop"><u>Stop Tracking</u></string>
+    <string name="listPositions"><u>List Of Positions</u></string>
+    <string name="welcome"><u>Welcome to Rendez-vous</u></string>
+    <string name="name"><u>Username :</u></string>
+    <string name="makeRDV"><u>Send new RDV</u></string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_my_account">My Account</string>
+    <string name="Accept_invt">Accept Rdv</string>
+    <string name="menu_log_out">Log Out</string>
+    <string name="title_activity_mapr_rdv">mapRdv</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
